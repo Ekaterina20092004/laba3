@@ -17,4 +17,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Test add func 
-          run: python3 -u -m unittest test.py
+          run: ls && python3 -u -m unittest test.py
