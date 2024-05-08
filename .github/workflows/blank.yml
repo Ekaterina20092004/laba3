@@ -17,4 +17,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Test add func 
-          run: ls && python3 -u -m unittest test.py
+          run: python3 -u -m unittest .github/workflow/test.py
