@@ -5,5 +5,9 @@ jobs:
   work_test:
       runs-on: ubuntu-latest
       steps:
-        - name: Test add func 
-          run: python3 -m unittest test
+        - name: Setup Python
+          uses: actions/setup-python@v4  
+          with:
+            python-version: '3.10'
+        - name: Run Python unit tests
+          run: python3 -u -m unittest .github/worklows/tests.py
