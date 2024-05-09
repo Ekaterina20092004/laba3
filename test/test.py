@@ -13,3 +13,6 @@ class TestAddFunction(unittest.TestCase):
         self.assertEqual(main.add(1, -2), -1)
         self.assertEqual(main.add(-1, 2), 1)
 
+
+if __name__ == '__main__':
+    unittest.main()
