@@ -14,4 +14,5 @@ class TestAddFunction(unittest.TestCase):
         self.assertEqual(add(-1, 2), 1)
 
 
-unittest.main()
+if __name__ == "__main__":
+    unittest.main()
