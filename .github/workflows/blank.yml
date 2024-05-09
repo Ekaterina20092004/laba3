@@ -1,13 +1,9 @@
 name: TESTS
 
-on:
-  push:
-    branches: [ "main", develop ]
-  pull_request:
-    branches: [ "main", develop ]
+on: [push, pull_request]
 jobs:
   work_test:
       runs-on: ubuntu-latest
       steps:
         - name: Test add func 
-          run: python3 -m unittest .github/workflow/test
+          run: cd .github/workflows/ && python3 -m unittest test
