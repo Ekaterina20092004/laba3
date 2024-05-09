@@ -1,5 +1,6 @@
 import unittest
-from main import add
+from main import *
+import os
 
 
 class TestAddFunction(unittest.TestCase):
@@ -15,4 +16,5 @@ class TestAddFunction(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    print(os.listdir())
     unittest.main()
