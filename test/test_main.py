@@ -1,4 +1,8 @@
-from ..main import add
+import sys
+sys.path.append("..")
+
+
+from main import add
 
 
 def test_add_1():
