@@ -1,7 +1,7 @@
 name: Project Tests
 on: [push]
 jobs:
-  Build:
+  Test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,11 +13,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pytest
-  Test:
-    needs: Build
-    runs-on: ubuntu-latest
-    steps:    
-      - uses: actions/checkout@v2
       - name: Test with pytest
         working-directory: test/
         run: python -m pytest test_main
