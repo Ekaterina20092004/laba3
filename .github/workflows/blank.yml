@@ -15,4 +15,4 @@ jobs:
           pip install pytest
       - name: Test with pytest
         working-directory: test/
-        run: python -m pytest test_main
+        run: python -m pytest test_main.py
